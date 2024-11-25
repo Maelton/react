@@ -10,6 +10,7 @@ Use `npm -help` para obter mais informações de todos os comandos possíveis pa
 
 ## Estrutura comum de um projeto Node.js
 
+```
 my-nodejs-project/
 ├── node_modules/       # Dependências do projeto
 ├── public/             # Arquivos estáticos (HTML, CSS, JS do cliente)
@@ -20,6 +21,7 @@ my-nodejs-project/
 ├── package.json        # Configuração do projeto e lista de dependências
 ├── .env                # Variáveis de ambiente
 └── README.md           # Documentação do projeto
+```
 
 ## Diferença entre o `package.json` e o `package-lock.json`
 
@@ -55,7 +57,17 @@ O package-lock.json é criado automaticamente pelo npm sempre que você instala 
 
 O armazenamento de dependências no Node.js funciona por meio de uma estrutura padronizada e altamente otimizada, gerenciada pelo npm (Node Package Manager) ou outras ferramentas como Yarn ou pnpm.
 
-Quando você instala dependências usando npm install, elas são armazenadas no diretório node_modules do projeto.
+Quando você instala dependências usando `npm install`, elas são armazenadas no diretório `node_modules` do projeto.
+
+O npm mantém um cache local para melhorar a performance nas instalações subsequentes. Esse cache armazena cópias dos pacotes baixados do repositório npm, para que o npm não precise baixá-los novamente toda vez que você os instalar.
+
+Quando você instala pacotes com o npm, há dois lugares principais onde o pacote é armazenado: a pasta `node_modules` e o **cache do npm**.
+
+Se você deseja instalar um pacote com o npm mas não quer que ele seja salvo no cache local, você pode usar a flag --no-cache ao executar o comando de instalação. Essa flag impede que o npm armazene o pacote no cache, forçando-o a baixar o pacote diretamente do repositório do npm.
+
+```
+npm install <pacote> --no-cache
+```
 
 ### Tipos de dependências
 

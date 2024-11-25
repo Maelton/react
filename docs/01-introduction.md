@@ -1,23 +1,11 @@
-# Node.js
+# O que é o React?
 
-Ambiente de execução para JavaScript fora do navegador, utiliza o motor de software V8, desenvolvido pela empresa Google, é responsável por traduzir (compilar) código JavaScript em linguagem de máquina.
+React é uma biblioteca JavaScript que serve para criar interfaces de usuário (UI) em aplicativos web.
 
-# NPM (Node Package Manager)
+# O que é o React Router?
 
-Gerenciador de pacotes padrão do Node.js, vem instalado juntamente com o Node.js.
+O React Router é uma biblioteca para gerenciamento de rotas em aplicativos React. Com ela, é possível configurar a navegação entre as páginas de um projeto de forma simples.
 
-# PNPM (Performant Node Package Manager)
+# Referências
 
-É um dos principais gerenciadores de pacotes JavaScript, desenvolvido em 2016 por Zoltan Kochan para o ambiente de execução JavaScript Node.js.
-
-# Yarn
-
-É um dos principais gerenciadores de pacotes JavaScript, desenvolvido em 2016 por Sebastian McKenzie da Meta para o ambiente de execução JavaScript Node.js.
-
-# NVM (Node Versions Manager)
-
-Gestor de versões do Node.js, permite gerir várias versões do Node.js na mesma máquina.
-
-# FNM (Fast Node Manager)
-
-Gerenciador de versões do Node.js com o mesmo objetivo do NVM.
+- [1. React 18 with TypeScript - React Intro + TypeScript Project Setup in VSC](https://youtu.be/r_hI8D7dPyM?si=uk1JQUaiH1DrEoez)
