@@ -46,4 +46,68 @@ Aqui, `joao` não tem o método `falar` diretamente, mas o encontra no protótip
 
 ## Desconstruindo objetos
 
+### Em vez de fazer isso:
+
+```
+const person = {
+  name: "Felpa",
+  age: 22,
+  isMarried: false
+}
+
+const name = person.name;
+const age = person.age;
+const isMarried = person.isMarried;
+```
+
+### Faça isso:
+
+```
+const person = {
+  name: "Felpa",
+  age: 22,
+  isMarried: false
+}
+
+const {name, age, isMarried} = person;
+```
+
+##
+
+### Em vez de fazer isso:
+
+const name = "Felpa";
+
+```
+const person = {
+  name: name,
+  idade: 20
+}
+```
+
+### Faça isso:
+
+const name = "Felpa";
+
+```
+const person = {
+  name,
+  idade: 20
+}
+```
+
 ## Operador de espalhamento (spread operator)
+
+```
+const person = {
+  name: "Person I",
+  age: 22,
+  isMarried: false
+}
+
+const person2 = {...person, name: "Person II"}
+```
+
+# Referências
+
+- [All The JavaScript You Need To Know For React](https://youtu.be/m55PTVUrlnA?si=Y27K55E3uEyTh1OF)
